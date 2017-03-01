@@ -1,0 +1,182 @@
+body {
+	padding: 0px;
+	margin: 0px;
+    background-color: #151D28;
+    height: auto;
+}
+
+header {
+	position: relative;
+    background-image: url(../img/NavBackground.png);
+    width: 100%;
+    height: 64px;
+    box-shadow: 0px 2px 5px 2px #000;
+    z-index: 50;
+}
+
+#homeImg {
+    background-image: url(../img/homeImg.png);
+    width: 125px;
+    height: 50px;
+}
+
+#ContactImg {
+    background-image: url(../img/ContactImg.png);
+    width: 125px;
+    height: 50px;
+}
+
+#AboutImg {
+    background-image: url(../img/AboutImg.png);
+    width: 125px;
+    height: 50px;
+}
+
+#DiceRollImg {
+    background-image: url(../img/DiceRollImg.png);
+    width: 135px;
+    height: 50px;
+}
+
+nav {
+    position: relative;
+    width: 650px;
+    left: 60%;
+    bottom: -20%;
+}
+
+nav > ul {
+    width: 600px;
+	margin: 0px;
+	list-style-type: none;
+}
+
+nav > ul > li {
+    width: 125px;
+    display: inline-block;
+}
+
+nav > ul > li > div > a {
+    width: 125px;
+    height: 50px;
+    text-align: center;
+    display: inline-block;
+}
+
+#logo {
+    position: absolute;
+    background-image: url(../img/logo.png);
+    height: 125px;
+    width: 500px;
+    bottom: -40%;
+}
+
+#mainContent {
+	position: relative;
+	width: 80%;
+    /*only made this 800px so i can see how it would look like with the page full of content*/
+    height: auto;
+	margin-right: auto;
+	margin-left: auto;
+	background-image: url(../img/oldpaperBackground.png);
+	z-index: 1;
+}
+
+#mainContent > h1 {
+    text-align: center;
+    font-family: 'blade 2';
+    font-size: 45px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 20px;
+	margin: 0px;
+	z-index: 2;
+}
+
+form {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+form > div {
+    width: 800px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form > div > input {
+    width: 500px;
+    float: right;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+form > label {
+    font-family: 'blade 2';
+    font-size: 30px;
+}
+
+form > div > label {
+    font-family: 'blade 2';
+    font-size: 30px;
+    width: 300px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#output {
+    height: auto;
+}
+
+#aboutContent {
+ margin-left: auto;
+    margin-right: auto;
+}
+
+.aboutInfo {
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+    text-align: center;
+}
+
+.featsH1 {
+	color: #ffffff;
+	text-align: center;
+	font-size: 2rem;
+}
+
+.flex {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	color: #000;
+	width: 90%;
+	margin: 0px auto;
+    padding: 10px 0px;
+	
+}
+
+.flex h2 {
+    margin: 20px 0px;
+	text-decoration: underline;
+	letter-spacing: 0.05rem;
+	font-size: 45px;
+	text-align: center;
+    font-family: 'blade 2';
+}
+
+.flex ul {
+	list-style: square;
+}
+
+.flex > div {
+	border: 4px inset #ffffff;
+	padding: 5px;
+	flex-grow: 1;
+	width: 35%;
+	letter-spacing: .015rem;
+}
