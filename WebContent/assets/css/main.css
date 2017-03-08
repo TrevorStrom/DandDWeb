@@ -180,3 +180,10 @@ form > div > label {
 	width: 35%;
 	letter-spacing: .015rem;
 }
+
+.characterForm {
+	
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
