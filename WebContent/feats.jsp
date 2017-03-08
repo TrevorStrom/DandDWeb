@@ -24,6 +24,7 @@
 				<li><div id="DiceRollImg">
 						<a href="diceRoller.jsp"></a>
 					</div></li>
+				<li><a href="feats.jsp">Feats</a></li>
 			</ul>
 		</nav>
 	</header>
