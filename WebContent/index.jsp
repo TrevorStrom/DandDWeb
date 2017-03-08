@@ -24,63 +24,63 @@
         <form>
             <div>
                 <label id="characterName">Character Name</label>
-                <input type="text">
+                <input type="text" placeholder="Merlin">
             </div>
             <div>
                 <label id="class">Class</label>
-                <input type="text">
+                <input type="text" placeholder="Wizard">
             </div>
             <div>
                 <label id="level">Level</label>
-                <input type="text">
+                <input type="text" placeholder="3">
             </div>
             <div>
                 <label id="background">Background</label>
-                <input type="text">
+                <input type="text" placeholder="Sage">
             </div>
             <div>
                 <label id="playerName">Player Name</label>
-                <input type="text">
+                <input type="text" placeholder="John Doe">
             </div>
             <div>
                 <label id="race">Race</label>
-                <input type="text">
+                <input type="text" placeholder="Half-Elf">
             </div>
             <div>
                 <label id="alignment">Alignment</label>
-                <input type="text">
+                <input type="text" placeholder="Chaotic Neutral">
             </div>
             <div>
                 <label id="experiencePoints">Experience Points</label>
-                <input type="number">
+                <input type="number" placeholder="2700">
             </div>
             <div>
                 <label id="strengthStat">Strength</label>
-                <input type="number">
+                <input type="number" placeholder="12">
             </div>
             <div>
                 <label id="dexterityStat">Dexterity</label>
-                <input type="number">
+                <input type="number" placeholder="14">
             </div>
             <div>
                 <label id="constitutionStat">Constitution</label>
-                <input type="number">
+                <input type="number" placeholder="14">
             </div>
             <div>
                 <label id="intelligenceStat">Intelligence</label>
-                <input type="number">
+                <input type="number" placeholder="18">
             </div>
             <div>
                 <label id="wisdomStat">Wisdom</label>
-                <input type="number">
+                <input type="number" placeholder="16">
             </div>
             <div>
                 <label id="charismaStat">Charisma</label>
-                <input type="number">
+                <input type="number" placeholder="10">
             </div>
             <div>
                 <label id="inspiration">Inspiration</label>
-                <input type="number">
+                <input type="number" placeholder="d6">
             </div>
             <div>
                 <label id="proficiencyBonus">Proficiency Bonus</label>
