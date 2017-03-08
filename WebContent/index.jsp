@@ -21,7 +21,7 @@
 	<section id="mainContent">
 		<h1>Character Sheet</h1>
 		<h1>Test</h1>
-        <form>
+        <form class="characterForm">
             <div>
                 <label id="characterName">Character Name</label>
                 <input type="text" placeholder="Merlin">
