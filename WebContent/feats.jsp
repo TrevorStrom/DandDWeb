@@ -30,8 +30,8 @@
 	<section id="mainContent">
 		<h1 class="featsH1">Character Feats</h1>
 		<div class="flex">
-			<div>
-				<h2 class="flex2">Alchemist</h2>
+			<div class="flex2">
+				<h2>Alchemist</h2>
 				<p>You have studied the secrets of alchemy and are an expert in
 					its practice, gaining the following benefits:</p>
 				<ul>
@@ -204,7 +204,7 @@
 					this feat multiple times. Each time you do so, you must choose a
 					different damage type.</p>
 			</div>
-			<div>
+			<div class="flex2">
 				<h2>Fell Handed</h2>
 				<p>You master the handaxe, battleaxe, greataxe, warhammer, and
 					maul. You gain the following benefits when using any of them:</p>
@@ -655,7 +655,7 @@
 						(Perception) checks relying on sight.</li>
 				</ul>
 			</div>
-			<div>
+			<div class="flex2">
 				<h2>Spear Mastery</h2>
 				<p>Though the spear is a simple weapon to learn, it rewards you
 					for the time you have taken to master it. You gain the following
