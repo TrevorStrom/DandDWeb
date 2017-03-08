@@ -15,13 +15,13 @@
 				<li><div id="ContactImg"><a href="contact.jsp"></a></div></li>
 				<li><div id="AboutImg"><a href="about.jsp"></a></div></li>
 				<li><div id="DiceRollImg"><a href="diceRoller.jsp"></a></div></li>
+				<li><a href="feats.jsp">Feats</a></li>
 			</ul>
 		</nav>
 	</header>
 	<section id="mainContent">
 		<h1>Character Sheet</h1>
-		<h1>Test</h1>
-        <form>
+        <form class="characterForm">
             <div>
                 <label id="characterName">Character Name</label>
                 <input type="text" placeholder="Merlin">
