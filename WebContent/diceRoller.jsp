@@ -15,6 +15,7 @@
 				<li><div id="ContactImg"><a href="#"></a></div></li>
 				<li><div id="AboutImg"><a href="about.jsp"></a></div></li>
 				<li><div id="DiceRollImg"><a href="diceRoller.jsp"></a></div></li>
+				<li><a href="feats.jsp">Feats</a></li>
 			</ul>
 		</nav>
 	</header>
