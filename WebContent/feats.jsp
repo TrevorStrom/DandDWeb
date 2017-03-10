@@ -12,19 +12,11 @@
 		<div id="logo"></div>
 		<nav>
 			<ul>
-				<li><div id="homeImg">
-						<a href="index.jsp"></a>
-					</div></li>
-				<li><div id="ContactImg">
-						<a href="#"></a>
-					</div></li>
-				<li><div id="AboutImg">
-						<a href="about.jsp"></a>
-					</div></li>
-				<li><div id="DiceRollImg">
-						<a href="diceRoller.jsp"></a>
-					</div></li>
-				<li><a href="feats.jsp">Feats</a></li>
+				<li><div id="homeImg"><a href="index.jsp"></a></div></li>
+				<li><div id="ContactImg"><a href="#"></a></div></li>
+				<li><div id="AboutImg"><a href="about.jsp"></a></div></li>
+				<li><div id="DiceRollImg"><a href="diceRoller.jsp"></a></div></li>
+				<li><div id="FeatsImg"><a href="feats.jsp"></a></div></li>
 			</ul>
 		</nav>
 	</header>
