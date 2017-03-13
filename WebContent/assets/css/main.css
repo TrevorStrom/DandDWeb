@@ -188,6 +188,7 @@ form > div > label {
 	width: 35%;
 	letter-spacing: .015rem;
 }
+
 .charSheet {
     display: flex;
     flex-direction: row;
@@ -197,35 +198,52 @@ form > div > label {
     margin: 10px 20px 0px 20px;
     padding: 5px;
 }
+
 .twoRowsDiv {
     display: flex;
     flex-direction: row;
     flex-grow: 1;
     position: relative;
 }
+
 .threeColumnDiv {
     display: flex;
     flex-direction: row;
-    flex-grow: 1;
+    flex: 1 1 100%;
 }
-.ColumnLeftDiv {
+
+/*.ColumnLeftDiv {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    flex-wrap: wrap;
+    flex-shrink: 1;
+    width: 33%;
 }
+
 .ColumnMiddleDiv {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    flex-wrap: wrap;
+    flex-shrink: 1;
+    width: 33%;
 }
+
 .ColumnRightDiv {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    flex-wrap: wrap;
+    flex-shrink: 1;
+    width: 33%;
+}*/
+
+.threeColumnsClass {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
+    width: 33%;
 }
+
 #characterNameDiv {
     display: flex;
     flex-direction: column;
@@ -256,13 +274,20 @@ form > div > label {
 }
 
 .inputDiv {
+    position: relative;
     border: 1px #3D311D solid;
     border-radius: 6px;
-    text-align: center;
 }
 
 .inputDiv > input {
     width: 90%;
+    margin-left: 5%;
+}
+
+.inputDiv > input[type="text"] {
+    background: transparent;
+    border: none;
+    border-bottom: 2px #3d311d solid;
 }
 
 #column1row1 {
@@ -321,8 +346,83 @@ form > div > label {
     flex-direction: column;
 }
 
-.skillDiv {
+/*.skillDiv {
     display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+.skillDiv > div {
+    width: 50%;
+    height: 16%;
+    margin-top: 5px;
+}*/
+
+.skillDiv {
+    width: 100%;
+}
+
+#statSaves {
+    flex-wrap: nowrap;
+}
+
+.leftStatColumn {
+    flex-direction: column;
+    
+}
+
+.rightStatColumn {
+    flex-direction: column;
+    flex: 1 1 50%;
+}
+
+#skillColumns {
+    flex-wrap: nowrap;
+    font-size: 25px;
+}
+
+.leftSkillColumn {
+    flex-direction: column;
+    flex: 1 1 50%;
+    width: 50%;
+}
+
+.rightSkillColumn {
+    flex-direction: column;
+    flex: 1 1 50%;
+    width: 50%;
+}
+
+#hitPointDiv {
+    flex-grow: 3;
+}
+
+#hitPointDiv > div {
+    width: 100%;
+}
+
+#proficienciesDiv {
+    flex-grow: 1;
+}
+
+#proficienciesDiv > div {
+    width: 100%;
+}
+
+#attackSpellCastingDiv {
     flex-direction: column;
     flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.attackSpellClass {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.attackSpellClass > div {
+    flex-grow: 1;
+    flex-shrink: 1;
 }
