@@ -24,28 +24,23 @@
 		
 		<form method="post">
 			<div class="form-group">
-				<label for="firstName"><strong>First Name:</strong></label>
-				<input name="firstName">
-				<br>
-				
-				<label for="lastName"><strong>Last Name:</strong></label>
-				<input  name="lastName"> 
-				<br>
-				
-				<label for="emailAddress"><strong>Email Address:</strong></label>
-				<input name="emailAddress">
-				<br>
-				
-				<input class="btn btn-primary btn-lg" name="submit" type="submit" value="Connect!">
-				<br><br>
-						
+				<div class="charSheet">
+					<div class="labelDiv"><label for="firstName"><strong>First Name:</strong></label></div>
+					<div class="inputDiv"><input class="inputDiv" name="firstName"></div>
+				</div>
+				<div class="charSheet">
+					<div class="labelDiv"><label for="lastName">Last Name:</label></div>
+					<div class="inputDiv"><input  name="lastName"></div>
+				</div>
+				<div class="charSheet">
+					<div class="labelDiv"><label for="emailAddress">Email Address:</label></div>
+					<div class="inputDiv"><input name="emailAddress"></div>
+				</div>
+				<div class="charSheet">
+					<input class="btn btn-primary btn-lg" name="submit" type="submit" value="Connect!">
+				</div>		
 			</div>
 		</form>
-        <form>
-            <div>
-            
-            </div>
-        </form>
 		<hr>
 	</section>
 </body>
