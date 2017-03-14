@@ -19,35 +19,33 @@
 			</ul>
 		</nav>
 	</header>
-	<section id="mainContent">
+	<section id="mainContent" style="height:500px;">
 		<h1>Contact Us</h1>
 		
 		<form method="post">
-			<div class="form-group">
+			<div class="contactInfo">
+			
 				<label for="firstName"><strong>First Name:</strong></label>
-				<input name="firstName">
-				<br>
+				<input type="text" width="50px"><br>
 				
-				<label for="lastName"><strong>Last Name:</strong></label>
-				<input  name="lastName"> 
-				<br>
+				<label for="firstName"><strong>Last Name:</strong></label>
+				<input type="text"><br>
 				
-				<label for="emailAddress"><strong>Email Address:</strong></label>
-				<input name="emailAddress">
-				<br>
+				<label for="emailAddress"><strong>Email:</strong></label>
+				<input type="text"><br>
 				
-				<input class="btn btn-primary btn-lg" name="submit" type="submit" value="Connect!">
-				<br><br>
-						
+				<label for="contactUs"><strong>Comments:  </strong></label>
+				<textarea rows="5" cols="50px"></textarea>
+				
+				<input class="btn-primary btn-lg" type="submit" value="Submit" onclick="alert('Thank you for taking the time to contact us!')">
+			
 			</div>
+		
 		</form>
-        <form>
-            <div>
-            
-            </div>
-        </form>
-		<hr>
+
 	</section>
+	
+	<footer>@copy 2017</footer>	
 </body>
 
 </html>

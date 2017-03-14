@@ -16,7 +16,7 @@
 						<a href="index.jsp"></a>
 					</div></li>
 				<li><div id="ContactImg">
-						<a href="#"></a>
+						<a href="contact.jsp"></a>
 					</div></li>
 				<li><div id="AboutImg">
 						<a href="about.jsp"></a>
