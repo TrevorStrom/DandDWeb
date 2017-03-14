@@ -21,7 +21,6 @@
 	</header>
 	<section id="mainContent">
 		<h1>Character Sheet</h1>
-		<h1>Test</h1>
         <form>
         	<div class="twoRowsDiv">
         		<div class="charSheet" id="column1row1">
@@ -275,123 +274,139 @@
 	        	</div>
         	</div>
         	<!--Armor  -->
-        	<div class="charSheet">
-        		<div>
-	                <label id="armorClass">Armor Class</label>
-	                <input type="number">
-            	</div>
-        	</div>
-        	<!--Weapon  -->
-        	<div class="charSheet">
-        		<div>
-        			<label id="weaponClass">Weapon Class</label>
-        			<input>
+        	<div class="charSheet" id="fullRow">
+        		<div class="fourDivRow">
+        			<div>
+        				<div class="labelDiv"><label id="armorClass">Armor Class</label></div>
+	                	<div class="inputDiv"><input type="number"></div>
+        			</div>
+        			<div>
+	        			<div class="labelDiv"><label id="weaponClass">Weapon Class</label></div>
+	        			<div class="inputDiv"><input type="number"></div>
+	        		</div>
+	        		<div>
+		                <div class="labelDiv"><label id="initiative">Initiative</label></div>
+		                <div class="inputDiv"><input type="number"></div>
+		            </div>
+		            <div>
+		                <div class="labelDiv"><label id="speed">Speed</label></div>
+		                <div class="inputDiv"><input type="number"></div>
+		            </div>
         		</div>
         	</div>
-        	<div class="charSheet" id="attackSpellCastingDiv">
-        		<div class="attackSpellClass">
-	        		<div>
-		        		<div class="labelDiv"><label id="Name">Name</label></div>
-		        		<div class="inputDiv"><input type="text"></div>
-	        		</div>
-	        		<div>
-		        		<div class="labelDiv"><label id="atkBonus">ATK Bonus</label></div>
-		        		<div class="inputDiv"><input type="text"></div>
-	        		</div>
-	        		<div>
-		        		<div class="labelDiv"><label id="damageType">Damage&#47;Type</label></div>
-		        		<div class="inputDiv"><input type="text"></div>
-	        		</div>
+        	<div id="twoColumnDiv">
+        		<div class="twoColumnClass">
+	        		<div class="charSheet" id="attackSpellCastingDiv">
+		        		<div class="attackSpellClass">
+			        		<div>
+				        		<div class="labelDiv"><label id="Name">Name</label></div>
+				        		<div class="inputDiv"><input type="text"></div>
+			        		</div>
+			        		<div>
+				        		<div class="labelDiv"><label id="atkBonus">ATK Bonus</label></div>
+				        		<div class="inputDiv"><input type="text"></div>
+			        		</div>
+			        		<div>
+				        		<div class="labelDiv"><label id="damageType">Damage and Type</label></div>
+				        		<div class="inputDiv"><input type="text"></div>
+			        		</div>
+		        		</div>
+		        		<div class="attackSpellClass">
+			        		<div>
+				        		<div class="labelDiv"><label id="Name">Name</label></div>
+				        		<div class="inputDiv"><input type="text"></div>
+			        		</div>
+			        		<div>
+				        		<div class="labelDiv"><label id="atkBonus">ATK Bonus</label></div>
+				        		<div class="inputDiv"><input type="text"></div>
+			        		</div>
+			        		<div>
+				        		<div class="labelDiv"><label id="damageType">Damage and Type</label></div>
+				        		<div class="inputDiv"><input type="text"></div>
+			        		</div>
+		        		</div>
+		        		<div class="attackSpellClass">
+			        		<div>
+				        		<div class="labelDiv"><label id="Name">Name</label></div>
+				        		<div class="inputDiv"><input type="text"></div>
+			        		</div>
+			        		<div>
+				        		<div class="labelDiv"><label id="atkBonus">ATK Bonus</label></div>
+				        		<div class="inputDiv"><input type="text"></div>
+			        		</div>
+			        		<div>
+				        		<div class="labelDiv"><label id="damageType">Damage and Type</label></div>
+				        		<div class="inputDiv"><input type="text"></div>
+			        		</div>
+		        		</div>
+		        		<div class="attackSpellClass">
+		        			<div class="inputDiv" id="attackSpellInput"><textarea></textarea></div>
+		        		</div>
+		        	</div>
         		</div>
-        		<div class="attackSpellClass">
-	        		<div>
-		        		<div class="labelDiv"><label id="Name">Name</label></div>
-		        		<div class="inputDiv"><input type="text"></div>
+	        	<div class="twoColumnClass">
+	        		<div class="charSheet" id="backpack">
+	        			<div class="moneyEquipmentClass" id="moneyDiv">
+	        				<div>
+	        					<div class="labelDiv">Copper</div>
+	        					<div class="inputDiv"><input type="number"></div>
+	        				</div>
+	        				<div>
+	        					<div class="labelDiv">Silver</div>
+	        					<div class="inputDiv"><input type="number"></div>
+	        				</div>
+	        				<div>
+	        					<div class="labelDiv">Electrom</div>
+	        					<div class="inputDiv"><input type="number"></div>
+	        				</div>
+	        				<div>
+	        					<div class="labelDiv">Gold</div>
+	        					<div class="inputDiv"><input type="number"></div>
+	        				</div>
+	        				<div>
+	        					<div class="labelDiv">Platnum</div>
+	        					<div class="inputDiv"><input type="number"></div>
+	        				</div>
+	        			</div>
+	        			<div class="moneyEquipmentClass" id="equipmentDiv">
+	        				<div>
+	        					<div class="labelDiv">Equipment</div>
+	        					<div class="inputDiv" id="equipmentInput"><textarea></textarea></div>
+	        				</div>
+	        			</div>
 	        		</div>
-	        		<div>
-		        		<div class="labelDiv"><label id="atkBonus">ATK Bonus</label></div>
-		        		<div class="inputDiv"><input type="text"></div>
-	        		</div>
-	        		<div>
-		        		<div class="labelDiv"><label id="damageType">Damage&#47;Type</label></div>
-		        		<div class="inputDiv"><input type="text"></div>
-	        		</div>
+	        	</div>
+        	</div>
+        	<div id="bottomTwoColumnDiv">
+        		<div class="twoColumnClass">
+        			<div class="charSheet" id="personalityDiv">
+        				<div>
+	        				<div class="labelDiv"><label id="personalityTraits">Personality Traits</label></div>
+	        				<div class="inputDiv"><textarea></textarea></div>
+        				</div>
+        				<div>
+	        				<div class="labelDiv"><label id="ideals">Ideals</label></div>
+	        				<div class="inputDiv"><textarea></textarea></div>
+        				</div>
+        				<div>
+	        				<div class="labelDiv"><label id="bonds">Bonds</label></div>
+	        				<div class="inputDiv"><textarea></textarea></div>
+        				</div>
+        				<div>
+	        				<div class="labelDiv"><label id="flaws">Flaws</label></div>
+	        				<div class="inputDiv"><textarea></textarea></div>
+        				</div>
+        			</div>
         		</div>
-        		<div class="attackSpellClass">
-	        		<div>
-		        		<div class="labelDiv"><label id="Name">Name</label></div>
-		        		<div class="inputDiv"><input type="text"></div>
-	        		</div>
-	        		<div>
-		        		<div class="labelDiv"><label id="atkBonus">ATK Bonus</label></div>
-		        		<div class="inputDiv"><input type="text"></div>
-	        		</div>
-	        		<div>
-		        		<div class="labelDiv"><label id="damageType">Damage&#47;Type</label></div>
-		        		<div class="inputDiv"><input type="text"></div>
-	        		</div>
+        		<div class="twoColumnClass">
+        			<div class="charSheet" id="featureTrait">
+        				<div>
+	        				<div class="labelDiv"><label id="featuresAndTraits">Features &amp; Traits</label></div>
+	        				<div class="inputDiv"><textarea></textarea></div>
+        				</div>
+        			</div>
         		</div>
         	</div>
-        		
-			<div>
-                <label id="initiative">Initiative</label>
-                <input type="number">
-            </div>
-            <div>
-                <label id="speed">Speed</label>
-                <input type="number">
-            </div>
-            <div>
-                
-                
-                <input type="text">
-                <input type="text">
-                
-                
-                <input type="text">
-                <input type="text">
-                
-                
-                <input type="text">
-                <input type="text">
-                <label id="attacksAndSpellcasting">Attacks &amp; Spellcasting</label>
-            </div>
-            <div>
-                <label id="copper">CP</label>
-                <input type="number">
-                <label id="silver">SP</label>
-                <input type="number">
-                <label id="electrum">EP</label>
-                <input type="number">
-                <label id="gold">GP</label>
-                <input type="number">
-                <label id="platinum">PP</label>
-                <input type="number">
-            </div>
-            <div>
-                <label id="equipment">Equipment</label>
-                <input type="text">
-            </div>
-            <div>
-                <label id="personalityTraits">Personality Traits</label>
-                <input type="text">
-            </div>
-            <div>
-                <label id="ideals">Ideals</label>
-                <input type="text">
-            </div>
-            <div>
-                <label id="bonds">Bonds</label>
-                <input type="text">
-            </div>
-            <div>
-                <label id="flaws">Flaws</label>
-                <input type="text">
-            </div>
-            <div>
-                <label id="featuresAndTraits">Features &amp; Traits</label>
-                <input type="text">
-            </div>
         </form>
 		<hr>
 	</section>
