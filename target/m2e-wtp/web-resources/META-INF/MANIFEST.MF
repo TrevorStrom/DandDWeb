@@ -1,5 +1,10 @@
 Manifest-Version: 1.0
+<<<<<<< HEAD
 Built-By: joebarber
 Build-Jdk: 1.8.0_111
+=======
+Built-By: Trevor
+Build-Jdk: 1.8.0_121
+>>>>>>> master
 Created-By: Maven Integration for Eclipse
 

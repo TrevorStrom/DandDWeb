@@ -5,6 +5,10 @@ body {
     height: auto;
 }
 
+input, textarea {
+    color: #ffffff;
+}
+
 header {
 	position: relative;
     background-image: url(../img/NavBackground.png);
@@ -38,15 +42,21 @@ header {
     height: 50px;
 }
 
+#FeatsImg {
+    background-image: url(../img/FeatsImg.png);
+    width: 125px;
+    height: 50px;
+}
+
 nav {
     position: relative;
-    width: 650px;
-    left: 60%;
+    width: 700px;
+    left: 46%;
     bottom: -20%;
 }
 
 nav > ul {
-    width: 600px;
+    width: 700px;
 	margin: 0px;
 	list-style-type: none;
 }
@@ -74,11 +84,10 @@ nav > ul > li > div > a {
 #mainContent {
 	position: relative;
 	width: 80%;
-    /*only made this 800px so i can see how it would look like with the page full of content*/
     height: auto;
 	margin-right: auto;
 	margin-left: auto;
-	background-image: url(../img/oldpaperBackground.png);
+	background-image: url(../img/DandDBackground.png);
 	z-index: 1;
 }
 
@@ -94,17 +103,9 @@ nav > ul > li > div > a {
 }
 
 form {
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-
-form > div {
-    width: 800px;
-    height: 50px;
-    margin-left: auto;
-    margin-right: auto;
+    font-family: 'blade 2';
+    color: #fff;
+    font-size: 30px;
 }
 
 form > div > input {
@@ -129,6 +130,7 @@ form > div > label {
 
 #output {
     height: auto;
+    font-family: sans-serif;
 }
 
 #aboutContent {
@@ -153,7 +155,7 @@ form > div > label {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	color: #000;
+	color: #ffffff;
 	width: 90%;
 	margin: 0px auto;
     padding: 10px 0px;
@@ -166,6 +168,7 @@ form > div > label {
 	letter-spacing: 0.05rem;
 	font-size: 45px;
 	text-align: center;
+    color: #000000;
     font-family: 'blade 2';
 }
 
@@ -181,35 +184,390 @@ form > div > label {
 	letter-spacing: .015rem;
 }
 
-.flex > .flex2 {
-	flex-grow: 2;
-	width: 100%;
-}
-
-.characterForm {
-	display: flex;
+.charSheet {
+    display: flex;
     flex-direction: row;
+    flex-grow: 1;
     flex-wrap: wrap;
-    width:100%;
-	height: 100%;	
+    margin: 10px 20px 0px 20px;
+    padding: 5px;
 }
 
-.characterForm > div {
-	width: 15%;
-	flex-grow: 1;
-	display: block;
-	margin: 5px;
-	padding: 10px;
-	text-align: left;
+.twoRowsDiv {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    position: relative;
 }
 
-.characterForm label,
-.characterForm input {
-	width: 25%;
-	flex-wrap: wrap;
-	font-size: 1.25rem;
-	display: inline;
-	word-wrap: break-word;
+.threeColumnDiv {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 100%;
 }
 
+.threeColumnsClass {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
+    width: 33%;
+}
 
+#characterNameDiv {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+}
+
+#characterNameDiv > div {
+    margin: 0px 5px 0px 5px;
+    /*display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;*/
+}
+
+.labelDiv {
+    border: 1px #3D311D solid;
+    border-radius: 6px;
+    padding-left: 5px;
+    margin-top: 5px;
+    background-color: #3D311D;
+}
+
+.inputDiv {
+    position: relative;
+    border: 1px #3D311D solid;
+    border-radius: 6px;
+}
+
+.inputDiv > input {
+    width: 90%;
+    margin-left: 5%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px #3d311d solid;
+}
+
+#column1row1 {
+    flex: 1 1 50%;
+}
+
+#sexAgeDiv {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.sexAge {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.sexAge > div > label {
+    
+}
+
+#raceDiv {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+}
+
+#column1row1Right {
+    flex: 1 1 50%;
+}
+
+#playerNameDiv {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+}
+
+#xpDiv {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+#alignmentDiv {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+}
+
+#column1row2 {
+}
+
+.classLevelBackgroundDiv {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.skillDiv {
+    width: 100%;
+}
+
+#statSaves {
+    flex-wrap: nowrap;
+}
+
+.leftStatColumn {
+    flex-direction: column;
+    
+}
+
+.rightStatColumn {
+    flex-direction: column;
+    flex: 1 1 50%;
+}
+
+#skillColumns {
+    flex-wrap: nowrap;
+    font-size: 23px;
+    white-space: nowrap;
+}
+
+.leftSkillColumn {
+    flex-direction: column;
+    flex: 1 1 50%;
+    width: 50%;
+}
+
+.rightSkillColumn {
+    flex-direction: column;
+    flex: 1 1 50%;
+    width: 50%;
+}
+
+#twoColumnDiv {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.twoColumnClass {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
+    width: 50%;
+}
+
+#hitPointDiv {
+    flex-grow: 3;
+}
+
+#hitPointDiv > div {
+    width: 100%;
+}
+
+#proficienciesDiv {
+    flex-grow: 1;
+}
+
+#proficienciesDiv > div {
+    width: 100%;
+}
+
+#attackSpellCastingDiv {
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.attackSpellClass {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.attackSpellClass > div {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+#attackSpellInput {
+    width: 100%;
+    padding: 5px;
+    height: auto;
+}
+
+#attackSpellInput > textarea {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    border-bottom: 2px #3d311d solid;
+    resize: vertical;
+}
+
+#moneyDiv {
+    flex-basis: 25%;
+    flex-grow: 1;
+}
+
+#equipmentDiv {
+    flex-basis: 75%;
+    flex-grow: 3;
+}
+
+#equipmentInput {
+    flex-grow: 3;
+    flex-basis: 85%;
+    padding: 5px;
+}
+
+#equipmentDiv > div {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#equipmentInput > textarea {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    border-bottom: 2px #3d311d solid;
+}
+
+#equipmentDiv .labelDiv {
+    flex-basis: 10%;
+    flex-grow: 1;
+}
+
+#bottomTwoColumnDiv {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-basis: 50%;
+}
+
+#personalityDiv {
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+#personalityDiv textarea {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    border-bottom: 2px #3d311d solid;
+    resize: vertical;
+    overflow: auto;
+}
+
+#personalityDiv .inputDiv {
+    padding: 5px;
+}
+
+#featureTrait {
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+#featureTrait .labelDiv {
+    flex-grow: 1;
+    flex-basis: 10%;
+}
+
+#featureTrait > div {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#featureTrait .inputDiv {
+    flex-grow: 3;
+    flex-basis: 90%;
+    height: 100%;
+    padding: 5px;
+}
+
+#featureTrait textarea {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    border-bottom: 2px #3d311d solid;
+    resize: vertical;
+    overflow: auto;
+}
+
+.fourDivRow {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+.fourDivRow > div {
+    flex-grow: 1;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.form-group .charSheet {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+#dieRoll {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+.dieRollInput {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+.dieRollInput .labelDiv {
+    flex-grow: 1;
+}
+
+.dieRollInput .inputDiv {
+    display: flex;
+    flex-grow: 1;
+    margin-top: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.dieRollInput .inputDiv > select {
+    display: flex;
+    text-align: center;
+}
+
+.buttons {
+    font-family: 'blade 2';
+    font-size: 30px;
+    width: 75px;
+    margin: 5px;
+    background-color: #3D311D;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 6px #302410; 
+    color: #fff;
+    cursor: pointer;
+}
