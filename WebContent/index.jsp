@@ -21,7 +21,6 @@
 	</header>
 	<section id="mainContent">
 		<h1>Character Sheet</h1>
-		<h1>Test</h1>
         <form>
         	<div class="twoRowsDiv">
         		<div class="charSheet" id="column1row1">
@@ -83,7 +82,7 @@
         	<div class="threeColumnDiv">
         		<!--First Column-->
         		<!--Abilities  -->
-	        	<div class="ColumnLeftDiv">
+	        	<div class="threeColumnsClass">
 	        		<div class="charSheet">
 	        			<div class="skillDiv">
 			                <div class="labelDiv"><label id="strengthStat">Strength</label></div>
@@ -112,240 +111,302 @@
 	        		</div>
 	        	</div>
 	        	<!--Second Column-->
-	        	<div class="ColumnMiddleDiv">
+	        	<div class="threeColumnsClass">
 	        		<!--Saves-->
-		        	<div class="charSheet">
-		        		<div>
-			                <div class="labelDiv"><label id="strengthSave">Strength</label></div>
-			                <div class="inputDiv"><input type="number"></div>
-		            	</div>
-			            <div>
-			                <div class="labelDiv"><label id="dexteritySave">Dexterity</label></div>
-			                <div class="inputDiv"><input type="number"></div>
-			            </div>
-			            <div>
-			                <div class="labelDiv"><label id="constitutionSave">Constitution</label></div>
-			                <div class="inputDiv"><input type="number"></div>
-			            </div>
-			            <div>
-			                <div class="labelDiv"><label id="intelligenceSave">Intelligence</label></div>
-			                <div class="inputDiv"><input type="number"></div>
-			            </div>
-			            <div>
-			                <div class="labelDiv"><label id="wisdomSave">Wisdom</label></div>
-			                <div class="inputDiv"><input type="number"></div>
-			            </div>
-			            <div>
-			                <div class="labelDiv"><label id="charismaSave">Charisma</label></div>
-			                <div class="inputDiv"><input type="number"></div>
-			            </div>
+		        	<div class="charSheet" id="statSaves">
+		        		<div class="leftStatColumn">
+		        			<div>
+				                <div class="labelDiv"><label id="strengthSave">Strength</label></div>
+				                <div class="inputDiv"><input type="number"></div>
+			            	</div>
+				            <div>
+				                <div class="labelDiv"><label id="dexteritySave">Dexterity</label></div>
+				                <div class="inputDiv"><input type="number"></div>
+				            </div>
+				            <div>
+				                <div class="labelDiv"><label id="constitutionSave">Constitution</label></div>
+				                <div class="inputDiv"><input type="number"></div>
+				            </div>
+		        		</div>
+		        		<div class="rightStatColumn">
+		        			<div>
+				                <div class="labelDiv"><label id="intelligenceSave">Intelligence</label></div>
+				                <div class="inputDiv"><input type="number"></div>
+				            </div>
+				            <div>
+				                <div class="labelDiv"><label id="wisdomSave">Wisdom</label></div>
+				                <div class="inputDiv"><input type="number"></div>
+				            </div>
+				            <div>
+				                <div class="labelDiv"><label id="charismaSave">Charisma</label></div>
+				                <div class="inputDiv"><input type="number"></div>
+				            </div>
+		        		</div>
 		        	</div>
 		        	<!--Skill  -->
-		        	<div class="charSheet">
-		        		<div>
-			                <label id="acrobatics">Acrobatics (Dex)</label>
-			                <input type="number">
-			            </div>
-			            <div>
-			                <label id="animalHandling">Animal Handling (Wis)</label>
-			                <input type="number">
-			            </div>
-			            <div>
-			                <label id="arcana">Arcana (Int)</label>
-			                <input type="number">
-			            </div>
-			            <div>
-			                <label id="athletics">Athletics (Str)</label>
-			                <input type="number">
-			            </div>
-			            <div>
-			                <label id="deception">Deception (Cha)</label>
-			                <input type="number">
-			            </div>
-			            <div>
-			                <label id="history">History (Int)</label>
-			                <input type="number">
-			            </div>
-			            <div>
-			                <label id="insight">Insight (Wis)</label>
-			                <input type="number">
-			            </div>
-			            <div>
-			                <label id="intimidation">Intimidation (Cha)</label>
-			                <input type="number">
-			            </div>
-			            <div>
-			                <label id="investigation">Investigation (Int)</label>
-			                <input type="number">
-			            </div>
-			            <div>
-			                <label id="medicine">Medicine (Wis)</label>
-			                <input type="number">
-			            </div>
-			            <div>
-			                <label id="nature">Nature (Int)</label>
-			                <input type="number">
-			            </div>
-			            <div>
-			                <label id="perception">Perception (Wis)</label>
-			                <input type="number">
-			            </div>
-			            <div>
-			                <label id="performance">Performance (Cha)</label>
-			                <input type="number">
-			            </div>
-			            <div>
-			                <label id="persuasion">Persuasion (Cha)</label>
-			                <input type="number">
-			            </div>
-			            <div>
-			                <label id="religion">Religion (Int)</label>
-			                <input type="number">
-			            </div>
-			            <div>
-			                <label id="sleightOfHand">Sleight of Hand (Dex)</label>
-			                <input type="number">
-			            </div>
-			            <div>
-			                <label id="stealth">Stealth (Dex)</label>
-			                <input type="number">
-			            </div>
-			            <div>
-			                <label id="survival">Survival (Wis)</label>
-			                <input type="number">
-			            </div>
+		        	<div class="charSheet" id="skillColumns">
+		        		<div class="leftSkillColumn">
+			        		<div>
+				                <div class="labelDiv"><label id="acrobatics">Acrobatics (Dex)</label></div>
+				                <div class="inputDiv"><input type="number"></div>
+				            </div>
+				            <div>
+				                <div class="labelDiv"><label id="arcana">Arcana (Int)</label></div>
+				                <div class="inputDiv"><input type="number"></div>
+			            	</div>
+			            	<div>
+				                <div class="labelDiv"><label id="deception">Deception (Cha)</label></div>
+				                <div class="inputDiv"><input type="number"></div>
+			            	</div>
+			            	<div>
+				                <div class="labelDiv"><label id="insight">Insight (Wis)</label></div>
+				                <div class="inputDiv"><input type="number"></div>
+			            	</div>
+			            	<div>
+				                <div class="labelDiv"><label id="investigation">Investigation (Int)</label></div>
+				                <div class="inputDiv"><input type="number"></div>
+			            	</div>
+			            	<div>
+				                <div class="labelDiv"><label id="nature">Nature (Int)</label></div>
+				                <div class="inputDiv"><input type="number"></div>
+			            	</div>
+			            	<div>
+				                <div class="labelDiv"><label id="performance">Performance (Cha)</label></div>
+				                <div class="inputDiv"><input type="number"></div>
+			            	</div>
+			            	<div>
+				                <div class="labelDiv"><label id="religion">Religion (Int)</label></div>
+				                <div class="inputDiv"><input type="number"></div>
+			            	</div>
+			            	<div>
+				                <div class="labelDiv"><label id="stealth">Stealth (Dex)</label></div>
+				                <div class="inputDiv"><input type="number"></div>
+			            	</div>
+		        		</div>
+		        		
+		        		<div class="rightSkillColumn">
+			        		<div>
+				                <div class="labelDiv"><label id="animalHandling">Animal Handling (Wis)</label></div>
+				                <div class="inputDiv"><input type="number"></div>
+				            </div>
+				            <div>
+				                <div class="labelDiv"><label id="athletics">Athletics (Str)</label></div>
+				                <div class="inputDiv"><input type="number"></div>
+			            	</div>
+			            	<div>
+				                <div class="labelDiv"><label id="history">History (Int)</label></div>
+				                <div class="inputDiv"><input type="number"></div>
+			            	</div>
+			            	<div>
+				                <div class="labelDiv"><label id="intimidation">Intimidation (Cha)</label></div>
+				                <div class="inputDiv"><input type="number"></div>
+			            	</div>
+			            	<div>
+				                <div class="labelDiv"><label id="medicine">Medicine (Wis)</label></div>
+				                <div class="inputDiv"><input type="number"></div>
+			            	</div>
+			            	<div>
+				                <div class="labelDiv"><label id="perception">Perception (Wis)</label></div>
+				                <div class="inputDiv"><input type="number"></div>
+			            	</div>
+			            	<div>
+				                <div class="labelDiv"><label id="persuasion">Persuasion (Cha)</label></div>
+				                <div class="inputDiv"><input type="number"></div>
+			            	</div>
+			            	<div>
+				                <div class="labelDiv"><label id="sleightOfHand">Sleight of Hand (Dex)</label></div>
+				                <div class="inputDiv"><input type="number"></div>
+			            	</div>
+			            	<div>
+				                <div class="labelDiv"><label id="survival">Survival (Wis)</label></div>
+				                <div class="inputDiv"><input type="number"></div>
+			            	</div>
+		        		</div> 
 		        	</div>
 		        	<!--Skill end  -->
 	        	</div>
-	        	<div class="ColumnRightDiv">
+	        	<div class="threeColumnsClass">
 	        		<!--Hit Points  -->
-		        	<div class="charSheet">
+		        	<div class="charSheet" id="hitPointDiv">
 		        		<div>
-			                <label id="hitPointMaximum">Hit Point Maximum</label>
-			                <input type="number">
-			                <label id="currentHitPoints">Current Hit Points</label>
-		                	<input type="number">
+			                <div class="labelDiv"><label id="hitPointMaximum">Hit Point Maximum</label></div>
+			                <div class="inputDiv"><input type="number"></div>
 			            </div>
 			            <div>
-			                <label id="temporaryHitPoints">Temporary Hit Points</label>
-			                <input type="number">
+			            	<div class="labelDiv"><label id="currentHitPoints">Current Hit Points</label></div>
+		                	<div class="inputDiv"><input type="number"></div>
 			            </div>
 			            <div>
-			                <label id="total">Total</label>
-			                <input type="number">
-			                <label id="hitDice">Hit Dice</label>
-			                <input type="number">
+			                <div class="labelDiv"><label id="temporaryHitPoints">Temporary Hit Points</label></div>
+			                <div class="inputDiv"><input type="number"></div>
 			            </div>
+			            <div>
+			                <div class="labelDiv"><label id="total">Total</label></div>
+			                <div class="inputDiv"><input type="number"></div>
+			            </div>
+			            <div>
+			            	<div class="labelDiv"><label id="hitDice">Hit Dice</label></div>
+			                <div class="inputDiv"><input type="number"></div>
+			            </div>
+			            <div id="deathSaveDiv">
+			            	<div>
+				            	<div class="labelDiv"><label id="successes">Successes</label></div>
+				                <div class="inputDiv"><input type="radio"></div>
+				                <div class="inputDiv"><input type="radio"></div>
+				                <div class="inputDiv"><input type="radio"></div>
+			            	</div>
+			            	<div>
+			            		<div class="labelDiv"><label id="failures">Failures</label></div>
+				                <div class="inputDiv"><input type="radio"></div>
+				                <div class="inputDiv"><input type="radio"></div>
+				                <div class="inputDiv"><input type="radio"></div>
+			            	</div>
+			                <div class="labelDiv"><label id="deathSaves">Death Saves</label></div>
+            			</div>
 		        	</div>
 		        	<!--Tool Proficiencies  -->
-		        	<div class="charSheet">
+		        	<div class="charSheet" id="proficienciesDiv">
 		        		<div>
-			                <label id="otherProficienciesAndLanguages">Other Proficiencies &amp; Languages</label>
-			                <input type="text">
+			                <div class="labelDiv"><label id="otherProficienciesAndLanguages">Other Proficiencies &amp; Languages</label></div>
+			                <div class="inputDiv"><input type="text"></div>
 		            	</div>
 		        	</div>
 	        	</div>
         	</div>
         	<!--Armor  -->
-        	<div class="charSheet">
-        		<div>
-	                <label id="armorClass">Armor Class</label>
-	                <input type="number">
-            	</div>
-        	</div>
-        	<!--Weapon  -->
-        	<div class="charSheet">
-        		<div>
-        			<label id="weaponClass">Weapon Class</label>
-        			<input>
+        	<div class="charSheet" id="fullRow">
+        		<div class="fourDivRow">
+        			<div>
+        				<div class="labelDiv"><label id="armorClass">Armor Class</label></div>
+	                	<div class="inputDiv"><input type="number"></div>
+        			</div>
+        			<div>
+	        			<div class="labelDiv"><label id="weaponClass">Weapon Class</label></div>
+	        			<div class="inputDiv"><input type="number"></div>
+	        		</div>
+	        		<div>
+		                <div class="labelDiv"><label id="initiative">Initiative</label></div>
+		                <div class="inputDiv"><input type="number"></div>
+		            </div>
+		            <div>
+		                <div class="labelDiv"><label id="speed">Speed</label></div>
+		                <div class="inputDiv"><input type="number"></div>
+		            </div>
         		</div>
-        	</div>	
-			<div>
-                <label id="initiative">Initiative</label>
-                <input type="number">
-            </div>
-            <div>
-                <label id="speed">Speed</label>
-                <input type="number">
-            </div>
-            <div>
-                <label id="hitPointMaximum">Hit Point Maximum</label>
-                <input type="number">
-                <label id="currentHitPoints">Current Hit Points</label>
-                <input type="number">
-            </div>
-            <div>
-                <label id="temporaryHitPoints">Temporary Hit Points</label>
-                <input type="number">
-            </div>
-            <div>
-                <label id="total">Total</label>
-                <input type="number">
-                <label id="hitDice">Hit Dice</label>
-                <input type="number">
-            </div>
-            <div>
-                <label id="successes">Successes</label>
-                <input type="radio">
-                <input type="radio">
-                <input type="radio">
-                <label id="failures">Failures</label>
-                <input type="radio">
-                <input type="radio">
-                <input type="radio">
-                <label id="deathSaves">Death Saves</label>
-            </div>
-            <div>
-                <label id="Name">Name</label>
-                <input type="text">
-                <input type="text">
-                <input type="text">
-                <label id="atkBonus">ATK Bonus</label>
-                <input type="text">
-                <input type="text">
-                <input type="text">
-                <label id="damageType">Damage&#47;Type</label>
-                <input type="text">
-                <input type="text">
-                <input type="text">
-                <label id="attacksAndSpellcasting">Attacks &amp; Spellcasting</label>
-            </div>
-            <div>
-                <label id="copper">CP</label>
-                <input type="number">
-                <label id="silver">SP</label>
-                <input type="number">
-                <label id="electrum">EP</label>
-                <input type="number">
-                <label id="gold">GP</label>
-                <input type="number">
-                <label id="platinum">PP</label>
-                <input type="number">
-            </div>
-            <div>
-                <label id="equipment">Equipment</label>
-                <input type="text">
-            </div>
-            <div>
-                <label id="personalityTraits">Personality Traits</label>
-                <input type="text">
-            </div>
-            <div>
-                <label id="ideals">Ideals</label>
-                <input type="text">
-            </div>
-            <div>
-                <label id="bonds">Bonds</label>
-                <input type="text">
-            </div>
-            <div>
-                <label id="flaws">Flaws</label>
-                <input type="text">
-            </div>
-            <div>
-                <label id="featuresAndTraits">Features &amp; Traits</label>
-                <input type="text">
-            </div> -->
+        	</div>
+        	<div id="twoColumnDiv">
+        		<div class="twoColumnClass">
+	        		<div class="charSheet" id="attackSpellCastingDiv">
+		        		<div class="attackSpellClass">
+			        		<div>
+				        		<div class="labelDiv"><label id="Name">Name</label></div>
+				        		<div class="inputDiv"><input type="text"></div>
+			        		</div>
+			        		<div>
+				        		<div class="labelDiv"><label id="atkBonus">ATK Bonus</label></div>
+				        		<div class="inputDiv"><input type="text"></div>
+			        		</div>
+			        		<div>
+				        		<div class="labelDiv"><label id="damageType">Damage and Type</label></div>
+				        		<div class="inputDiv"><input type="text"></div>
+			        		</div>
+		        		</div>
+		        		<div class="attackSpellClass">
+			        		<div>
+				        		<div class="labelDiv"><label id="Name">Name</label></div>
+				        		<div class="inputDiv"><input type="text"></div>
+			        		</div>
+			        		<div>
+				        		<div class="labelDiv"><label id="atkBonus">ATK Bonus</label></div>
+				        		<div class="inputDiv"><input type="text"></div>
+			        		</div>
+			        		<div>
+				        		<div class="labelDiv"><label id="damageType">Damage and Type</label></div>
+				        		<div class="inputDiv"><input type="text"></div>
+			        		</div>
+		        		</div>
+		        		<div class="attackSpellClass">
+			        		<div>
+				        		<div class="labelDiv"><label id="Name">Name</label></div>
+				        		<div class="inputDiv"><input type="text"></div>
+			        		</div>
+			        		<div>
+				        		<div class="labelDiv"><label id="atkBonus">ATK Bonus</label></div>
+				        		<div class="inputDiv"><input type="text"></div>
+			        		</div>
+			        		<div>
+				        		<div class="labelDiv"><label id="damageType">Damage and Type</label></div>
+				        		<div class="inputDiv"><input type="text"></div>
+			        		</div>
+		        		</div>
+		        		<div class="attackSpellClass">
+		        			<div class="inputDiv" id="attackSpellInput"><textarea></textarea></div>
+		        		</div>
+		        	</div>
+        		</div>
+	        	<div class="twoColumnClass">
+	        		<div class="charSheet" id="backpack">
+	        			<div class="moneyEquipmentClass" id="moneyDiv">
+	        				<div>
+	        					<div class="labelDiv">Copper</div>
+	        					<div class="inputDiv"><input type="number"></div>
+	        				</div>
+	        				<div>
+	        					<div class="labelDiv">Silver</div>
+	        					<div class="inputDiv"><input type="number"></div>
+	        				</div>
+	        				<div>
+	        					<div class="labelDiv">Electrom</div>
+	        					<div class="inputDiv"><input type="number"></div>
+	        				</div>
+	        				<div>
+	        					<div class="labelDiv">Gold</div>
+	        					<div class="inputDiv"><input type="number"></div>
+	        				</div>
+	        				<div>
+	        					<div class="labelDiv">Platnum</div>
+	        					<div class="inputDiv"><input type="number"></div>
+	        				</div>
+	        			</div>
+	        			<div class="moneyEquipmentClass" id="equipmentDiv">
+	        				<div>
+	        					<div class="labelDiv">Equipment</div>
+	        					<div class="inputDiv" id="equipmentInput"><textarea></textarea></div>
+	        				</div>
+	        			</div>
+	        		</div>
+	        	</div>
+        	</div>
+        	<div id="bottomTwoColumnDiv">
+        		<div class="twoColumnClass">
+        			<div class="charSheet" id="personalityDiv">
+        				<div>
+	        				<div class="labelDiv"><label id="personalityTraits">Personality Traits</label></div>
+	        				<div class="inputDiv"><textarea></textarea></div>
+        				</div>
+        				<div>
+	        				<div class="labelDiv"><label id="ideals">Ideals</label></div>
+	        				<div class="inputDiv"><textarea></textarea></div>
+        				</div>
+        				<div>
+	        				<div class="labelDiv"><label id="bonds">Bonds</label></div>
+	        				<div class="inputDiv"><textarea></textarea></div>
+        				</div>
+        				<div>
+	        				<div class="labelDiv"><label id="flaws">Flaws</label></div>
+	        				<div class="inputDiv"><textarea></textarea></div>
+        				</div>
+        			</div>
+        		</div>
+        		<div class="twoColumnClass">
+        			<div class="charSheet" id="featureTrait">
+        				<div>
+	        				<div class="labelDiv"><label id="featuresAndTraits">Features &amp; Traits</label></div>
+	        				<div class="inputDiv"><textarea></textarea></div>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
         </form>
 		<hr>
 	</section>
